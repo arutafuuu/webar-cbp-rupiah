@@ -171,13 +171,8 @@ model-viewer {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  /* Gunakan 50% untuk lingkaran sempurna */
-
-  /* PERUBAHAN UTAMA: Tengah transparan, gunakan garis pinggir (border) */
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.8);
-
-  /* Shadow luar agar garis tetap terlihat jelas meski warna uang di belakangnya mirip */
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 
   cursor: pointer;
@@ -185,38 +180,25 @@ model-viewer {
   padding: 0;
 }
 
-/* 2. Kondisi Sembunyi (Di belakang model 3D) */
 .hotspot:not([data-visible]) {
   background-color: transparent;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
-  /* Buat garisnya jadi sangat samar */
   box-shadow: none;
   pointer-events: none;
-  /* Pastikan tidak bisa diklik saat tersembunyi */
 }
 
-/* 3. Kondisi Hover (Disorot Mouse) */
 .hotspot:hover {
   transform: scale(1.3);
-  /* Beri sedikit warna putih transparan (20%) agar terasa interaktif tapi tidak menutupi */
   background-color: rgba(255, 255, 255, 0.2);
   border-color: var(--text);
 }
 
-/* 4. Kondisi Aktif (Saat Di-klik / Anotasi Terbuka) */
 .hotspot.active {
   background-color: transparent;
-  /* Tetap bolong tengahnya */
   border: 3px solid var(--accent);
-  /* Border sedikit lebih tebal menandakan sedang aktif */
-
-  /* Efek 'glowing ring' (cincin bersinar) di luar titik agar sangat beda dengan default */
   box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
   transform: scale(1.1);
-  /* Sedikit membesar tapi tidak sebesar saat hover */
 }
-
-/* --- KODE DI BAWAH INI TETAP SAMA SEPERTI MILIK ANDA --- */
 
 .hotspot-annotation {
   background: var(--overlay-bg);
@@ -420,4 +402,13 @@ model-viewer {
   .nominal-value {
     font-size: 20px;
   }
+}
+
+/* Fix MindAR video feed hidden behind backgrounds */
+#mindar-container video {
+  z-index: 0 !important;
+}
+
+#mindar-container canvas {
+  z-index: 1 !important;
 }
