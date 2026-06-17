@@ -1,0 +1,226 @@
+[
+  {
+    "id": "rp100000",
+    "name": "Rp100.000",
+    "modelSrc": "/models/uang_100.000.glb",
+    "alt": "Model 3D Uang Kertas 100.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp100.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Dr. (H.C.) Ir. Soekarno dan Dr. (H.C.) Drs. Mohammad Hatta, Proklamator Kemerdekaan dan Presiden-Wakil Presiden pertama RI.",
+        "imageSrc": "/images/Soekarno-Hatta.jpg"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp100.000",
+        "description": "Angka nominal pecahan Rp100.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman seperti dianyam yang berubah warna jika dilihat dari sudut tertentu."
+      }
+    ]
+  },
+  {
+    "id": "rp50000",
+    "name": "Rp50.000",
+    "modelSrc": "/models/uang_50.000.glb",
+    "alt": "Model 3D Uang Kertas 50.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp50.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Ir. H. Djuanda Kartawidjaja, Perdana Menteri Indonesia ke-10 yang mencetuskan Deklarasi Djuanda.",
+        "imageSrc": "/images/Djuanda-Kartawidjaja.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp50.000",
+        "description": "Angka nominal pecahan Rp50.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman yang ditanamkan pada kertas uang."
+      }
+    ]
+  },
+  {
+    "id": "rp20000",
+    "name": "Rp20.000",
+    "modelSrc": "/models/uang_20.000.glb",
+    "alt": "Model 3D Uang Kertas 20.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp20.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Dr. G.S.S.J. Ratulangi (Sam Ratulangi), pahlawan nasional asal Sulawesi Utara yang terkenal dengan filsafat 'Si Tou Timou Tumou Tou'.",
+        "imageSrc": "/images/Sam-Ratulangi.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp20.000",
+        "description": "Angka nominal pecahan Rp20.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman vertikal yang tertanam di dalam dokumen kertas uang."
+      }
+    ]
+  },
+  {
+    "id": "rp10000",
+    "name": "Rp10.000",
+    "modelSrc": "/models/uang_10.000.glb",
+    "alt": "Model 3D Uang Kertas 10.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp10.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Frans Kaisiepo, pahlawan nasional dari Papua yang aktif berjuang menyatukan wilayah Papua ke dalam NKRI.",
+        "imageSrc": "/images/Frans-Kaisiepo.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp10.000",
+        "description": "Angka nominal pecahan Rp10.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman yang ditanamkan vertikal pada kertas uang pecahan sepuluh ribu rupiah."
+      }
+    ]
+  },
+  {
+    "id": "rp5000",
+    "name": "Rp5.000",
+    "modelSrc": "/models/uang_5.000.glb",
+    "alt": "Model 3D Uang Kertas 5.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp5.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Dr. K.H. Idham Chalid, ulama besar dan tokoh politik Indonesia yang pernah menjabat sebagai Wakil Perdana Menteri dan Ketua MPR/DPR.",
+        "imageSrc": "/images/Idham-Chalid.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp5.000",
+        "description": "Angka nominal pecahan Rp5.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman vertikal sebagai salah satu unsur utama pengaman uang kertas."
+      }
+    ]
+  },
+  {
+    "id": "rp2000",
+    "name": "Rp2.000",
+    "modelSrc": "/models/uang_2.000.glb",
+    "alt": "Model 3D Uang Kertas 2.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp2.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Mohammad Hoesni Thamrin, tokoh pergerakan nasional Betawi yang aktif berjuang di Volksraad demi kemaslahatan masyarakat pribumi.",
+        "imageSrc": "/images/Mohammad-Husni-Thamrin.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp2.000",
+        "description": "Angka nominal pecahan Rp2.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman vertikal yang ditanam pada media kertas uang pecahan dua ribu rupiah."
+      }
+    ]
+  },
+  {
+    "id": "rp1000",
+    "name": "Rp1.000",
+    "modelSrc": "/models/uang_1.000.glb",
+    "alt": "Model 3D Uang Kertas 1.000 Rupiah",
+    "title": "CBP Rupiah 3D (Rp1.000)",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "hotspots": [
+      {
+        "id": "hotspot-1",
+        "position": "0.0025 0.0205 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Tokoh Pahlawan",
+        "description": "Tjut Meutia, pahlawan nasional wanita asal Aceh yang terkenal dengan keberaniannya memimpin perlawanan melawan penjajah Belanda.",
+        "imageSrc": "/images/Cut-Nyak-Meutia.png"
+      },
+      {
+        "id": "hotspot-2",
+        "position": "-0.0160 0.0279 -0.0032",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Nominal Uang Rp1.000",
+        "description": "Angka nominal pecahan Rp1.000."
+      },
+      {
+        "id": "hotspot-3",
+        "position": "-0.0084 0.0207 0.0002",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Benang Pengaman",
+        "description": "Benang pengaman vertikal yang tertanam di dalam kertas uang pecahan terkecil ini."
+      }
+    ]
+  }
+]

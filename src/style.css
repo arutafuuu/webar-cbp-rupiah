@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --text: #f8fafc;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --overlay-bg: rgba(15, 23, 42, 0.7);
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  font-family: var(--font);
+  color: var(--text);
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.ar-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  --poster-color: transparent;
+  /* background-color: transparent so we see the radial-gradient */
+}
+
+/* Custom AR Button used inside info-overlay */
+.ar-button-custom {
+  flex: 1;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ar-button-custom:hover {
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+  transform: translateY(-2px);
+}
+
+.ar-button-custom:active {
+  transform: scale(0.96);
+}
+
+.info-overlay {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  background: var(--overlay-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  pointer-events: none;
+  animation: slideDown 0.8s ease-out forwards;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-20px);
+}
+
+.info-content {
+  text-align: center;
+}
+
+.info-actions {
+  display: flex;
+  gap: 12px;
+  pointer-events: auto;
+  /* allow clicks on buttons */
+  justify-content: center;
+}
+
+.info-overlay h1 {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.info-overlay p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .info-overlay {
+    top: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+  }
+
+  .info-overlay h1 {
+    font-size: 22px;
+  }
+
+  .info-overlay p {
+    font-size: 12px;
+  }
+
+  .info-actions {
+    flex-direction: column-reverse;
+  }
+}
+
+/* Hotspot Styles */
+/* 1. Kondisi Default (Tidak di-klik) */
+.hotspot {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /* Gunakan 50% untuk lingkaran sempurna */
+
+  /* PERUBAHAN UTAMA: Tengah transparan, gunakan garis pinggir (border) */
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  /* Shadow luar agar garis tetap terlihat jelas meski warna uang di belakangnya mirip */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+}
+
+/* 2. Kondisi Sembunyi (Di belakang model 3D) */
+.hotspot:not([data-visible]) {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  /* Buat garisnya jadi sangat samar */
+  box-shadow: none;
+  pointer-events: none;
+  /* Pastikan tidak bisa diklik saat tersembunyi */
+}
+
+/* 3. Kondisi Hover (Disorot Mouse) */
+.hotspot:hover {
+  transform: scale(1.3);
+  /* Beri sedikit warna putih transparan (20%) agar terasa interaktif tapi tidak menutupi */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--text);
+}
+
+/* 4. Kondisi Aktif (Saat Di-klik / Anotasi Terbuka) */
+.hotspot.active {
+  background-color: transparent;
+  /* Tetap bolong tengahnya */
+  border: 3px solid var(--accent);
+  /* Border sedikit lebih tebal menandakan sedang aktif */
+
+  /* Efek 'glowing ring' (cincin bersinar) di luar titik agar sangat beda dengan default */
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+  transform: scale(1.1);
+  /* Sedikit membesar tapi tidak sebesar saat hover */
+}
+
+/* --- KODE DI BAWAH INI TETAP SAMA SEPERTI MILIK ANDA --- */
+
+.hotspot-annotation {
+  background: var(--overlay-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: var(--text);
+  display: block;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 500;
+  left: 50%;
+  bottom: calc(100% + 40px);
+  transform: translateX(-50%);
+  max-width: 200px;
+  min-width: 150px;
+  padding: 12px 16px;
+  position: absolute;
+  width: max-content;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.hotspot-annotation::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%);
+}
+
+.hotspot.active .hotspot-annotation {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.hotspot:not([data-visible])>* {
+  display: none;
+}
+
+.hotspot-annotation strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.hotspot-annotation p {
+  margin: 0;
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-weight: 400;
+  white-space: normal;
+}
+
+.hotspot-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Selection Screen Styles */
+.selection-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+}
+
+.selection-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.selection-subtitle {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.nominal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.nominal-card {
+  background: var(--overlay-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nominal-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.2);
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.nominal-card:active {
+  transform: scale(0.98);
+}
+
+.nominal-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.nominal-desc {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text);
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font);
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.back-button:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    padding: 12px;
+  }
+
+  .selection-title {
+    font-size: 28px;
+  }
+
+  .nominal-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .nominal-card {
+    padding: 20px 15px;
+  }
+
+  .nominal-value {
+    font-size: 20px;
+  }
+}
