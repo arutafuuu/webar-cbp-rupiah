@@ -4,8 +4,9 @@
     "name": "Rp100.000",
     "modelSrc": "/models/uang_100.000.glb",
     "alt": "Model 3D Uang Kertas 100.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp100.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp100.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -20,14 +21,71 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp100.000",
-        "description": "Angka nominal pecahan Rp100.000."
+        "description": "Angka nominal pecahan Rp100.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman seperti dianyam yang berubah warna jika dilihat dari sudut tertentu."
+        "description": "Berbentuk anyaman yang memuat logo Bank Indonesia dan angka \"100\" secara berulang yang memiliki efek gerak dinamis dengan motif Batik Kawung Jawa.",
+        "imageSrc": "/images/Benang-Pengaman-100.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "-0.0174 0.0176 0.0016",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Colour Shifting",
+        "description": "Gambar bunga yang akan berubah warna apabila dilihat dari sudut pandang berbeda.",
+        "imageSrc": "/images/Color-Shifting-100.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-100.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-100.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-100.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-100.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-100.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-100.png"
       }
     ]
   },
@@ -36,8 +94,9 @@
     "name": "Rp50.000",
     "modelSrc": "/models/uang_50.000.glb",
     "alt": "Model 3D Uang Kertas 50.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp50.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp50.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -52,14 +111,71 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp50.000",
-        "description": "Angka nominal pecahan Rp50.000."
+        "description": "Angka nominal pecahan Rp50.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman yang ditanamkan pada kertas uang."
+        "description": "Berbentuk anyaman yang memuat logo Bank Indonesia dan angka \"50\" secara berulang yang memiliki efek gerak dinamis dengan motif Batik Kawung Jawa.",
+        "imageSrc": "/images/Benang-Pengaman-50.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "-0.0174 0.0176 0.0016",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Colour Shifting",
+        "description": "Gambar bunga yang akan berubah warna apabila dilihat dari sudut pandang berbeda.",
+        "imageSrc": "/images/Color-Shifting-50.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-50.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-50.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-50.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-50.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "0.0158 0.0203 0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-50.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-50.png"
       }
     ]
   },
@@ -68,8 +184,9 @@
     "name": "Rp20.000",
     "modelSrc": "/models/uang_20.000.glb",
     "alt": "Model 3D Uang Kertas 20.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp20.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp20.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -84,14 +201,70 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp20.000",
-        "description": "Angka nominal pecahan Rp20.000."
+        "description": "Angka nominal pecahan Rp20.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman vertikal yang tertanam di dalam dokumen kertas uang."
+        "description": "Berbentuk anyaman yang memuat logo Bank Indonesia dan angka \"20\" secara berulang yang akan memendar dalam beberapa warna jika dilihat dengan sinar ultraviolet."
+      },
+      {
+        "id": "hotspot-4",
+        "position": "-0.0174 0.0176 0.0016",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Colour Shifting",
+        "description": "Gambar bunga yang akan berubah warna apabila dilihat dari sudut pandang berbeda.",
+        "imageSrc": "/images/Color-Shifting-20.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-20.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-20.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-20.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-20.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-20.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-20.png"
       }
     ]
   },
@@ -100,8 +273,9 @@
     "name": "Rp10.000",
     "modelSrc": "/models/uang_10.000.glb",
     "alt": "Model 3D Uang Kertas 10.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp10.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp10.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -116,14 +290,63 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp10.000",
-        "description": "Angka nominal pecahan Rp10.000."
+        "description": "Angka nominal pecahan Rp10.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman yang ditanamkan vertikal pada kertas uang pecahan sepuluh ribu rupiah."
+        "description": "Terdapat benang pengaman yang ditanam pada uang Rupiah kertas pecahan Rp10.000, Rp5.000, Rp2.000 dan Rp1.000 yang akan memendar dalam beberapa warna jika dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Benang-Pengaman-10.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-10.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-10.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-10.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-10.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-10.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-10.png"
       }
     ]
   },
@@ -132,8 +355,9 @@
     "name": "Rp5.000",
     "modelSrc": "/models/uang_5.000.glb",
     "alt": "Model 3D Uang Kertas 5.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp5.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp5.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -148,14 +372,63 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp5.000",
-        "description": "Angka nominal pecahan Rp5.000."
+        "description": "Angka nominal pecahan Rp5.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman vertikal sebagai salah satu unsur utama pengaman uang kertas."
+        "description": "Benang pengaman vertikal sebagai salah satu unsur utama pengaman uang kertas.",
+        "imageSrc": "/images/Benang-Pengaman-5.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-5.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-5.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-5.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-5.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-5.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-5.png"
       }
     ]
   },
@@ -164,8 +437,9 @@
     "name": "Rp2.000",
     "modelSrc": "/models/uang_2.000.glb",
     "alt": "Model 3D Uang Kertas 2.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp2.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp2.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -180,14 +454,63 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp2.000",
-        "description": "Angka nominal pecahan Rp2.000."
+        "description": "Angka nominal pecahan Rp2.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman vertikal yang ditanam pada media kertas uang pecahan dua ribu rupiah."
+        "description": "Benang pengaman vertikal yang ditanam pada media kertas uang pecahan dua ribu rupiah.",
+        "imageSrc": "/images/Benang-Pengaman-2.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-2.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-2.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-2.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-2.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-2.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-2.png"
       }
     ]
   },
@@ -196,8 +519,9 @@
     "name": "Rp1.000",
     "modelSrc": "/models/uang_1.000.glb",
     "alt": "Model 3D Uang Kertas 1.000 Rupiah",
-    "title": "CBP Rupiah 3D (Rp1.000)",
-    "description": "Geser untuk memutar, cubit untuk memperbesar. Arahkan kursor ke titik biru untuk info tambahan.",
+    "title": "Rupiah Rp1.000 3D",
+    "description": "Geser untuk memutar, cubit untuk memperbesar. Tap/klik titik biru untuk info tambahan.",
+    "emisi": "2022",
     "hotspots": [
       {
         "id": "hotspot-1",
@@ -212,14 +536,63 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp1.000",
-        "description": "Angka nominal pecahan Rp1.000."
+        "description": "Angka nominal pecahan Rp1.000. Hasil cetak yang terasa kasar apabila diraba."
       },
       {
         "id": "hotspot-3",
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Benang pengaman vertikal yang tertanam di dalam kertas uang pecahan terkecil ini."
+        "description": "Benang pengaman vertikal yang tertanam di dalam kertas uang pecahan terkecil ini.",
+        "imageSrc": "/images/Benang-Pengaman-1.png"
+      },
+      {
+        "id": "hotspot-4",
+        "position": "0.0135 0.0153 0.0027",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Latent Image",
+        "description": "Gambar Tersembunyi berupa tulisan \"BI\" yang dapat dilihat dari sudut pandang tertentu.",
+        "imageSrc": "/images/Latent-Image-1.png"
+      },
+      {
+        "id": "hotspot-5",
+        "position": "-0.0226 0.0219 -0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Blind Code",
+        "description": "Berupa pasangan garis di sisi kanan dan kiri uang yang akan terasa kasar bila diraba.",
+        "imageSrc": "/images/Blind-Code-1.png"
+      },
+      {
+        "id": "hotspot-6",
+        "position": "-0.0145 0.0217 -0.0003",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Watermark & Electrotype",
+        "description": "Tanda Air (Watermark) berupa gambar pahlawan dan Electrotype berupa angka sesuai pecahan.",
+        "imageSrc": "/images/Watermark-Electrotype-1.png"
+      },
+      {
+        "id": "hotspot-7",
+        "position": "0.0201 0.0177 0.0015",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Rectoverso",
+        "description": "Gambar saling isi berupa logo Bank Indonesia yang dapat dilihat secara utuh jika diterawang ke arah cahaya.",
+        "imageSrc": "/images/Rectoverso-1.png"
+      },
+      {
+        "id": "hotspot-8",
+        "position": "0.0175 0.0202 0.0004",
+        "normal": "0.0000 0.4229 0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Depan-1.png"
+      },
+      {
+        "id": "hotspot-9",
+        "position": "-0.0156 0.0147 0.0025",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Ultraviolet",
+        "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Ultraviolet-Belakang-1.png"
       }
     ]
   }
