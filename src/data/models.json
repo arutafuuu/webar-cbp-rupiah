@@ -86,6 +86,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-100.png"
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Topeng Betawi. Tari ini merupakan tari tradisional masyarakat Betawi di Jakarta yang menggabungkan unsur seni tari, musik, dan drama, serta memiliki sifat teatrikal yang khas."
+      },
+      {
+        "id": "hotspot-12",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Raja Ampat. Terletak di Papua Barat Daya, Raja Ampat terkenal di seluruh dunia karena keindahan gugusan pulau karang (karst) dan kekayaan bawah lautnya yang luar biasa."
       }
     ]
   },
@@ -176,6 +190,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-50.png"
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Legong. Tari klasik asal Bali yang dikenal dengan gerakan tubuh yang luwes, ekspresif (terutama pada permainan mata atau seledet), dan sangat terikat dengan iringan musik gamelan."
+      },
+      {
+        "id": "hotspot-12",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Taman Nasional Komodo. Terletak di Nusa Tenggara Timur, kawasan ini merupakan habitat asli hewan purba komodo dan menyajikan pemandangan bukit savana serta pantai yang eksotis."
       }
     ]
   },
@@ -208,7 +236,8 @@
         "position": "-0.0084 0.0207 0.0002",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Benang Pengaman",
-        "description": "Berbentuk anyaman yang memuat logo Bank Indonesia dan angka \"20\" secara berulang yang akan memendar dalam beberapa warna jika dilihat dengan sinar ultraviolet."
+        "description": "Berbentuk anyaman yang memuat logo Bank Indonesia dan angka \"20\" secara berulang yang akan memendar dalam beberapa warna jika dilihat dengan sinar ultraviolet.",
+        "imageSrc": "/images/Benang-Pengaman-20.png"
       },
       {
         "id": "hotspot-4",
@@ -265,6 +294,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-20.png"
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Gong. Tari tradisional dari suku Dayak di Kalimantan yang melambangkan kelembutan dan keindahan seorang gadis. Penarinya menari dengan lemah lembut di atas sebuah gong."
+      },
+      {
+        "id": "hotspot-12",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Kepulauan Derawan. Terletak di Kalimantan Timur, menampilkan keindahan pantai pasir putih dan ekosistem laut yang menjadi rumah bagi penyu hijau dan ubur-ubur langka."
       }
     ]
   },
@@ -347,6 +390,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-10.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Pakarena. Tari klasik dari Sulawesi Selatan (etnis Makassar) yang mencerminkan sifat perempuan sejati yang sopan, setia, patuh, dan hormat melalui gerakan yang sangat lambat dan anggun."
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Taman Nasional Wakatobi. Terletak di Sulawesi Tenggara, kawasan ini merupakan surga bawah laut dengan keanekaragaman terumbu karang tertinggi di dunia."
       }
     ]
   },
@@ -429,6 +486,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-5.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Gambyong. Tari tradisional dari Jawa Tengah yang berkembang menjadi tari penyambutan tamu kehormatan dengan gerakan yang anggun, serasi, dan luwes."
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Gunung Bromo. Terletak di Jawa Timur, Gunung Bromo menyajikan pemandangan lautan pasir yang luas, kawah yang aktif, serta panorama matahari terbit yang magis."
       }
     ]
   },
@@ -511,6 +582,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-2.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Piring. Tari tradisional dari Minangkabau, Sumatera Barat, di mana para penari membawa piring di telapak tangan mereka dan mengayunkannya dengan gerakan cepat tanpa terjatuh."
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Ngarai Sianok. Lembah curam (patahan bumi) yang terletak di Bukittinggi, Sumatera Barat, yang menawarkan pemandangan tebing-tebing megah yang hijau dan aliran sungai."
       }
     ]
   },
@@ -593,6 +678,20 @@
         "annotation": "Ultraviolet",
         "description": "Hasil cetak yang akan memendar dalam 1 (satu) atau beberapa warna apabila dilihat dengan sinar ultraviolet.",
         "imageSrc": "/images/Ultraviolet-Belakang-1.png"
+      },
+      {
+        "id": "hotspot-10",
+        "position": "0.0018 0.0215 -0.0007",
+        "normal": "-0.0000 -0.4229 -0.9062",
+        "annotation": "Tari Daerah",
+        "description": "Tari Tifa. Tari tradisional dari Papua dan Maluku yang melambangkan rasa syukur, kebersamaan, dan kegembiraan yang ditarikan secara dinamis dengan properti alat musik tifa."
+      },
+      {
+        "id": "hotspot-11",
+        "position": "0.0163 0.0217 -0.0008",
+        "normal": "0.0000 -0.4229 -0.9062",
+        "annotation": "Keindahan Alam Indonesia",
+        "description": "Banda Neira. Terletak di Kepulauan Banda, Maluku, tempat ini memadukan keindahan alam laut yang jernih, Gunung Api Banda, serta nilai sejarah sebagai pusat rempah-rempah dunia."
       }
     ]
   }

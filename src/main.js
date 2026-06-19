@@ -187,7 +187,7 @@ function render3DView(modelData, fromScanner = false) {
         ${hotspotsHTML}
 
         <button slot="ar-button" id="ar-button" style="display: none;">
-          Lihat di Ruangan Anda (AR)
+          Lihat di Ruangan Anda
         </button>
       </model-viewer>
     </div>
@@ -206,7 +206,7 @@ function render3DView(modelData, fromScanner = false) {
              <path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" stroke-width="2"/>
              <path d="M12 12L12 12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
-          Lihat di Ruangan Anda (AR)
+          Lihat di Ruangan Anda
         </button>
       </div>
     </div>
@@ -225,6 +225,8 @@ function render3DView(modelData, fromScanner = false) {
   customArButton.addEventListener('click', () => {
     if (realArButton) {
       realArButton.click();
+    } else {
+      alert('Mode AR tidak tersedia di perangkat Anda. Silahkan coba di perangkat lain.');
     }
   });
 
