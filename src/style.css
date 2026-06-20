@@ -7,6 +7,38 @@
   --accent-hover: #2563eb;
   --overlay-bg: rgba(15, 23, 42, 0.7);
   --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --body-bg: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  --title-grad: linear-gradient(135deg, #60a5fa, #a78bfa);
+  --subtitle-text: #cbd5e1;
+  --card-bg: var(--overlay-bg);
+  --card-hover-bg: rgba(30, 41, 59, 0.8);
+  --card-hover-border: rgba(96, 165, 250, 0.5);
+  --desc-text: #94a3b8;
+  --back-btn-bg: rgba(255, 255, 255, 0.05);
+  --back-btn-hover: rgba(255, 255, 255, 0.15);
+  --back-btn-border: rgba(255, 255, 255, 0.1);
+  --scanner-overlay-bg: rgba(15, 23, 42, 0.7);
+  --btn-primary-bg: rgba(59, 130, 246, 0.2);
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --accent: #2f64b3; 
+  --accent-hover: #1e4585;
+  --overlay-bg: rgba(255, 255, 255, 0.85);
+  --body-bg: radial-gradient(circle at center, #ffffff 0%, #c5d0ee 100%); 
+  --title-grad: linear-gradient(135deg, #2f64b3, #c9363b); 
+  --subtitle-text: #334155;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-hover-bg: rgba(255, 255, 255, 1);
+  --card-hover-border: rgba(47, 100, 179, 0.5);
+  --desc-text: #475569;
+  --back-btn-bg: rgba(197, 208, 238, 0.3); 
+  --back-btn-hover: rgba(197, 208, 238, 0.6);
+  --back-btn-border: rgba(47, 100, 179, 0.2);
+  --scanner-overlay-bg: rgba(255, 255, 255, 0.85);
+  --btn-primary-bg: rgba(197, 208, 238, 0.6);
 }
 
 body {
@@ -14,8 +46,9 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  background: var(--body-bg);
   font-family: var(--font);
   color: var(--text);
 }
@@ -117,7 +150,7 @@ model-viewer {
   margin: 0 0 12px 0;
   font-size: 28px;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: var(--title-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.5px;
@@ -127,7 +160,7 @@ model-viewer {
   margin: 0;
   font-size: 15px;
   line-height: 1.6;
-  color: #cbd5e1;
+  color: var(--subtitle-text);
 }
 
 @keyframes slideDown {
@@ -285,7 +318,7 @@ model-viewer {
 .hotspot-annotation p {
   margin: 0;
   font-size: 12px;
-  color: #cbd5e1;
+  color: var(--subtitle-text);
   line-height: 1.5;
   font-weight: 400;
   white-space: normal;
@@ -316,7 +349,7 @@ model-viewer {
   position: absolute;
   top: 0;
   left: 0;
-  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  background: var(--body-bg);
 }
 
 .selection-title {
@@ -324,7 +357,7 @@ model-viewer {
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: var(--title-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: -0.5px;
@@ -332,7 +365,7 @@ model-viewer {
 
 .selection-subtitle {
   font-size: 16px;
-  color: #cbd5e1;
+  color: var(--subtitle-text);
   margin-bottom: 40px;
   text-align: center;
 }
@@ -346,7 +379,7 @@ model-viewer {
 }
 
 .nominal-card {
-  background: var(--overlay-bg);
+  background: var(--card-bg);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 30px 20px;
@@ -364,9 +397,9 @@ model-viewer {
 
 .nominal-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(96, 165, 250, 0.5);
-  box-shadow: 0 8px 25px rgba(96, 165, 250, 0.2);
-  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: var(--card-hover-bg);
 }
 
 .nominal-card:active {
@@ -382,12 +415,12 @@ model-viewer {
 
 .nominal-desc {
   font-size: 14px;
-  color: #94a3b8;
+  color: var(--desc-text);
 }
 
 .back-button {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--back-btn-bg);
+  border: 1px solid var(--back-btn-border);
   color: var(--text);
   padding: 12px 16px;
   border-radius: 12px;
@@ -403,7 +436,7 @@ model-viewer {
 }
 
 .back-button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--back-btn-hover);
 }
 
 .back-button:active {
@@ -460,6 +493,65 @@ model-viewer {
   object-fit: contain;
 }
 
+/* Theme Toggle Button */
+.theme-btn {
+  background: var(--overlay-bg);
+  border: 1px solid var(--back-btn-border);
+  color: var(--text);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: var(--back-btn-hover);
+}
+
+.theme-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-btn svg {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sun-icon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.moon-icon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+:root[data-theme="light"] .theme-btn {
+  box-shadow: 0 4px 15px rgba(47, 100, 179, 0.2);
+}
+
+:root[data-theme="light"] .sun-icon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+:root[data-theme="light"] .moon-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
 .welcome-footer {
   position: absolute;
   bottom: 30px;
@@ -478,7 +570,7 @@ model-viewer {
 }
 
 .social-icon {
-  color: #cbd5e1;
+  color: var(--subtitle-text);
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -489,7 +581,7 @@ model-viewer {
 
 .credit-text {
   font-size: 13px;
-  color: #94a3b8;
+  color: var(--desc-text);
   font-weight: 500;
   letter-spacing: 0.5px;
 }

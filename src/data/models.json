@@ -21,7 +21,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp100.000",
-        "description": "Angka nominal pecahan Rp100.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp100.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-100.png"
       },
       {
         "id": "hotspot-3",
@@ -92,14 +93,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Topeng Betawi. Tari ini merupakan tari tradisional masyarakat Betawi di Jakarta yang menggabungkan unsur seni tari, musik, dan drama, serta memiliki sifat teatrikal yang khas."
+        "description": "Tari Topeng Betawi. Tari ini merupakan tari tradisional masyarakat Betawi di Jakarta yang menggabungkan unsur seni tari, musik, dan drama, serta memiliki sifat teatrikal yang khas.",
+        "imageSrc": "/images/Tari-100.jpg"
       },
       {
         "id": "hotspot-12",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Raja Ampat. Terletak di Papua Barat Daya, Raja Ampat terkenal di seluruh dunia karena keindahan gugusan pulau karang (karst) dan kekayaan bawah lautnya yang luar biasa."
+        "description": "Raja Ampat. Terletak di Papua Barat Daya, Raja Ampat terkenal di seluruh dunia karena keindahan gugusan pulau karang (karst) dan kekayaan bawah lautnya yang luar biasa.",
+        "imageSrc": "/images/Alam-100.webp"
       }
     ]
   },
@@ -125,7 +128,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp50.000",
-        "description": "Angka nominal pecahan Rp50.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp50.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-50.png"
       },
       {
         "id": "hotspot-3",
@@ -196,14 +200,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Legong. Tari klasik asal Bali yang dikenal dengan gerakan tubuh yang luwes, ekspresif (terutama pada permainan mata atau seledet), dan sangat terikat dengan iringan musik gamelan."
+        "description": "Tari Legong. Tari klasik asal Bali yang dikenal dengan gerakan tubuh yang luwes, ekspresif (terutama pada permainan mata atau seledet), dan sangat terikat dengan iringan musik gamelan.",
+        "imageSrc": "/images/Tari-50.jpg"
       },
       {
         "id": "hotspot-12",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Taman Nasional Komodo. Terletak di Nusa Tenggara Timur, kawasan ini merupakan habitat asli hewan purba komodo dan menyajikan pemandangan bukit savana serta pantai yang eksotis."
+        "description": "Taman Nasional Komodo. Terletak di Nusa Tenggara Timur, kawasan ini merupakan habitat asli hewan purba komodo dan menyajikan pemandangan bukit savana serta pantai yang eksotis.",
+        "imageSrc": "/images/Alam-50.webp"
       }
     ]
   },
@@ -229,7 +235,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp20.000",
-        "description": "Angka nominal pecahan Rp20.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp20.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-20.png"
       },
       {
         "id": "hotspot-3",
@@ -300,14 +307,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Gong. Tari tradisional dari suku Dayak di Kalimantan yang melambangkan kelembutan dan keindahan seorang gadis. Penarinya menari dengan lemah lembut di atas sebuah gong."
+        "description": "Tari Gong. Tari tradisional dari suku Dayak di Kalimantan yang melambangkan kelembutan dan keindahan seorang gadis. Penarinya menari dengan lemah lembut di atas sebuah gong.",
+        "imageSrc": "/images/Tari-20.jpg"
       },
       {
         "id": "hotspot-12",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Kepulauan Derawan. Terletak di Kalimantan Timur, menampilkan keindahan pantai pasir putih dan ekosistem laut yang menjadi rumah bagi penyu hijau dan ubur-ubur langka."
+        "description": "Kepulauan Derawan. Terletak di Kalimantan Timur, menampilkan keindahan pantai pasir putih dan ekosistem laut yang menjadi rumah bagi penyu hijau dan ubur-ubur langka.",
+        "imageSrc": "/images/Alam-20.jpeg"
       }
     ]
   },
@@ -333,7 +342,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp10.000",
-        "description": "Angka nominal pecahan Rp10.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp10.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-10.png"
       },
       {
         "id": "hotspot-3",
@@ -396,14 +406,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Pakarena. Tari klasik dari Sulawesi Selatan (etnis Makassar) yang mencerminkan sifat perempuan sejati yang sopan, setia, patuh, dan hormat melalui gerakan yang sangat lambat dan anggun."
+        "description": "Tari Pakarena. Tari klasik dari Sulawesi Selatan (etnis Makassar) yang mencerminkan sifat perempuan sejati yang sopan, setia, patuh, dan hormat melalui gerakan yang sangat lambat dan anggun.",
+        "imageSrc": "/images/Tari-10.webp"
       },
       {
         "id": "hotspot-11",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Taman Nasional Wakatobi. Terletak di Sulawesi Tenggara, kawasan ini merupakan surga bawah laut dengan keanekaragaman terumbu karang tertinggi di dunia."
+        "description": "Taman Nasional Wakatobi. Terletak di Sulawesi Tenggara, kawasan ini merupakan surga bawah laut dengan keanekaragaman terumbu karang tertinggi di dunia.",
+        "imageSrc": "/images/Alam-10.jpg"
       }
     ]
   },
@@ -429,7 +441,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp5.000",
-        "description": "Angka nominal pecahan Rp5.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp5.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-5.png"
       },
       {
         "id": "hotspot-3",
@@ -492,14 +505,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Gambyong. Tari tradisional dari Jawa Tengah yang berkembang menjadi tari penyambutan tamu kehormatan dengan gerakan yang anggun, serasi, dan luwes."
+        "description": "Tari Gambyong. Tari tradisional dari Jawa Tengah yang berkembang menjadi tari penyambutan tamu kehormatan dengan gerakan yang anggun, serasi, dan luwes.",
+        "imageSrc": "/images/Tari-5.jpg"
       },
       {
         "id": "hotspot-11",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Gunung Bromo. Terletak di Jawa Timur, Gunung Bromo menyajikan pemandangan lautan pasir yang luas, kawah yang aktif, serta panorama matahari terbit yang magis."
+        "description": "Gunung Bromo. Terletak di Jawa Timur, Gunung Bromo menyajikan pemandangan lautan pasir yang luas, kawah yang aktif, serta panorama matahari terbit yang magis.",
+        "imageSrc": "/images/Alam-5.jpg"
       }
     ]
   },
@@ -525,7 +540,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp2.000",
-        "description": "Angka nominal pecahan Rp2.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp2.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-2.png"
       },
       {
         "id": "hotspot-3",
@@ -588,14 +604,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Piring. Tari tradisional dari Minangkabau, Sumatera Barat, di mana para penari membawa piring di telapak tangan mereka dan mengayunkannya dengan gerakan cepat tanpa terjatuh."
+        "description": "Tari Piring. Tari tradisional dari Minangkabau, Sumatera Barat, di mana para penari membawa piring di telapak tangan mereka dan mengayunkannya dengan gerakan cepat tanpa terjatuh.",
+        "imageSrc": "/images/Tari-2.png"
       },
       {
         "id": "hotspot-11",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Ngarai Sianok. Lembah curam (patahan bumi) yang terletak di Bukittinggi, Sumatera Barat, yang menawarkan pemandangan tebing-tebing megah yang hijau dan aliran sungai."
+        "description": "Ngarai Sianok. Lembah curam (patahan bumi) yang terletak di Bukittinggi, Sumatera Barat, yang menawarkan pemandangan tebing-tebing megah yang hijau dan aliran sungai.",
+        "imageSrc": "/images/Alam-2.jpg"
       }
     ]
   },
@@ -621,7 +639,8 @@
         "position": "-0.0160 0.0279 -0.0032",
         "normal": "0.0000 0.4229 0.9062",
         "annotation": "Nominal Uang Rp1.000",
-        "description": "Angka nominal pecahan Rp1.000. Hasil cetak yang terasa kasar apabila diraba."
+        "description": "Angka nominal pecahan Rp1.000. Hasil cetak yang terasa kasar apabila diraba.",
+        "imageSrc": "/images/Nominal-Uang-1.png"
       },
       {
         "id": "hotspot-3",
@@ -684,14 +703,16 @@
         "position": "0.0018 0.0215 -0.0007",
         "normal": "-0.0000 -0.4229 -0.9062",
         "annotation": "Tari Daerah",
-        "description": "Tari Tifa. Tari tradisional dari Papua dan Maluku yang melambangkan rasa syukur, kebersamaan, dan kegembiraan yang ditarikan secara dinamis dengan properti alat musik tifa."
+        "description": "Tari Tifa. Tari tradisional dari Papua dan Maluku yang melambangkan rasa syukur, kebersamaan, dan kegembiraan yang ditarikan secara dinamis dengan properti alat musik tifa.",
+        "imageSrc": "/images/Tari-1.webp"
       },
       {
         "id": "hotspot-11",
         "position": "0.0163 0.0217 -0.0008",
         "normal": "0.0000 -0.4229 -0.9062",
         "annotation": "Keindahan Alam Indonesia",
-        "description": "Banda Neira. Terletak di Kepulauan Banda, Maluku, tempat ini memadukan keindahan alam laut yang jernih, Gunung Api Banda, serta nilai sejarah sebagai pusat rempah-rempah dunia."
+        "description": "Banda Neira. Terletak di Kepulauan Banda, Maluku, tempat ini memadukan keindahan alam laut yang jernih, Gunung Api Banda, serta nilai sejarah sebagai pusat rempah-rempah dunia.",
+        "imageSrc": "/images/Alam-1.webp"
       }
     ]
   }

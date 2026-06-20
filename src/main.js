@@ -6,29 +6,59 @@ import { MindARThree } from 'https://esm.sh/mind-ar@1.2.5/dist/mindar-image-thre
 
 let mindarThree = null;
 
+const currentTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+function toggleTheme() {
+  const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  
+  const logoBI = document.getElementById('logo-bi');
+  const logoCBP = document.getElementById('logo-cbp');
+  if (logoBI && logoCBP) {
+    if (newTheme === 'light') {
+      logoBI.src = '/images/Bank-Indonesia.png';
+      logoCBP.src = '/images/cbp-rupiah.png';
+    } else {
+      logoBI.src = '/images/Bank-Indonesia-Putih.png';
+      logoCBP.src = '/images/cbp-rupiah-putih.png';
+    }
+  }
+}
+
+const loopBacksound = new Audio('/loop-backsound.mp3');
+loopBacksound.loop = true;
+
 function welcomeScreen() {
   const appElement = document.querySelector('#app');
   appElement.innerHTML = `
-    <div class="selection-container" style="justify-content: center; position: relative;">
-      <div class="welcome-header">
-        <img src="/images/Bank-Indonesia-Putih.png" alt="Bank Indonesia" class="welcome-logo" />
-        <img src="/images/cbp-rupiah-putih.png" alt="CBP Rupiah" class="welcome-logo" />
+    <div class="selection-container" style="justify-content: space-between; position: relative; padding: 0;">
+      <div class="welcome-header" style="position: static; padding-top: 40px;">
+        <img id="logo-bi" src="${document.documentElement.getAttribute('data-theme') === 'light' ? '/images/Bank-Indonesia.png' : '/images/Bank-Indonesia-Putih.png'}" alt="Bank Indonesia" class="welcome-logo" />
+        <img id="logo-cbp" src="${document.documentElement.getAttribute('data-theme') === 'light' ? '/images/cbp-rupiah.png' : '/images/cbp-rupiah-putih.png'}" alt="CBP Rupiah" class="welcome-logo" />
       </div>
 
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 400px; z-index: 1;">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 400px; z-index: 1; flex-grow: 1; padding: 20px;">
         <h1 class="selection-title">Mari kita Kenali Keaslian Uang Rupiah</h1>
         <p class="selection-subtitle">Pilih mode untuk memulai.</p>
-        <button id="scan-mode-btn" class="back-button" style="margin-bottom: 24px; background: rgba(59, 130, 246, 0.2); border-color: var(--accent); width: 100%;">
+        <button id="scan-mode-btn" class="back-button" style="margin-bottom: 24px; background: var(--btn-primary-bg); border-color: var(--accent); width: 100%;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><path d="M3 7v-4h4M21 7v-4h-4M3 17v4h4M21 17v4h-4M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path></svg>
           Mode Scan
         </button>
-        <button id="manual-btn" class="back-button" style="margin-bottom: 24px; background: rgba(59, 130, 246, 0.2); border-color: var(--accent); width: 100%;">
+        <button id="manual-btn" class="back-button" style="margin-bottom: 24px; background: var(--btn-primary-bg); border-color: var(--accent); width: 100%;">
           <svg width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m7.5 12l-2.004 2.672a2 2 0 0 0 .126 2.552l3.784 4.128c.378.413.912.648 1.473.648H15.5c2.4 0 4-2 4-4q0 0 0 0V9.429m-3 .571v-.571c0-2.286 3-2.286 3 0"></path><path d="M13.5 10V8.286c0-2.286 3-2.286 3 0V10m-6 0V7.5c0-2.286 3-2.286 3 0q0 0 0 0V10m-3 0V3.499A1.5 1.5 0 0 0 9 2v0a1.5 1.5 0 0 0-1.5 1.5V15"></path></g></svg>
           Pilih Manual
         </button>
+        <div style="margin-top: 10px;">
+          <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme" style="margin: 0 auto;">
+            <svg class="sun-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+          </button>
+        </div>
       </div>
 
-      <div class="welcome-footer">
+      <div class="welcome-footer" style="position: static; padding-bottom: 40px;">
         <div class="social-icons">
           <a href="#" class="social-icon" aria-label="Facebook">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -44,6 +74,11 @@ function welcomeScreen() {
       </div>
     </div>
   `;
+
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
 
   const scanBtn = document.getElementById('scan-mode-btn');
   if (scanBtn) {
@@ -67,7 +102,7 @@ function renderSelection() {
     <div class="selection-container">
       <h1 class="selection-title">Eksplorasi Rupiah 3D</h1>
       <p class="selection-subtitle">Pilih nominal uang yang ingin Anda lihat dalam bentuk 3D dan AR.</p>
-      <button id="back-btn" class="back-button" style="margin-bottom: 24px; background: rgba(59, 130, 246, 0.2); border-color: var(--accent);">
+      <button id="back-btn" class="back-button" style="margin-bottom: 24px; background: var(--btn-primary-bg); border-color: var(--accent);">
         <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4.4 7.4L6.8 4h2.5L7.2 7h6.3a6.5 6.5 0 0 1 0 13H9l1-2h3.5a4.5 4.5 0 1 0 0-9H7.2l2.1 3H6.8L4.4 8.6L4 8z"></path></svg>
         Kembali
       </button>
@@ -105,15 +140,15 @@ async function renderScanner() {
       <div id="mindar-container" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
       <div class="scanner-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 20px; box-sizing: border-box;">
         <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; pointer-events: auto;">
-          <h2 style="color: white; margin: 0; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.8); font-weight: 600;">Arahkan ke Uang Rupiah</h2>
-          <button id="back-btn" class="back-button" style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(8px); border-color: rgba(255,255,255,0.2);">
+          <h2 style="color: var(--text); margin: 0; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); font-weight: 600;">Arahkan ke Uang Rupiah</h2>
+          <button id="back-btn" class="back-button" style="background: var(--scanner-overlay-bg); backdrop-filter: blur(8px); border-color: var(--back-btn-border); color: var(--text);">
             <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4.4 7.4L6.8 4h2.5L7.2 7h6.3a6.5 6.5 0 0 1 0 13H9l1-2h3.5a4.5 4.5 0 1 0 0-9H7.2l2.1 3H6.8L4.4 8.6L4 8z"></path></svg>
             Kembali
           </button>
         </div>
         <div style="width: 280px; height: 140px; border: 2px dashed rgba(255,255,255,0.8); border-radius: 12px; box-shadow: 0 0 0 9999px rgba(0,0,0,0.6);"></div>
-        <div style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(8px); padding: 12px 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px;">
-          <p style="color: rgba(255,255,255,0.9); font-size: 14px; margin: 0; text-align: center;">Model 3D akan muncul otomatis saat uang dikenali</p>
+        <div style="background: var(--scanner-overlay-bg); backdrop-filter: blur(8px); padding: 12px 20px; border-radius: 12px; border: 1px solid var(--back-btn-border); margin-bottom: 20px;">
+          <p style="color: var(--text); font-size: 14px; margin: 0; text-align: center;">Model 3D akan muncul otomatis saat uang dikenali</p>
         </div>
       </div>
     </div>
@@ -158,6 +193,11 @@ async function renderScanner() {
 
 function render3DView(modelData, fromScanner = false) {
   const appElement = document.querySelector('#app');
+
+  // Mulai memutar backsound
+  loopBacksound.currentTime = 0;
+  loopBacksound.volume = 0.5;
+  loopBacksound.play().catch(err => console.log('Audio play error:', err));
 
   const hotspotsHTML = modelData.hotspots.map((hotspot, index) => `
     <button class="hotspot" slot="${hotspot.id}" data-position="${hotspot.position}" data-normal="${hotspot.normal}" data-visibility-attribute="visible">
@@ -213,6 +253,9 @@ function render3DView(modelData, fromScanner = false) {
   `;
 
   document.getElementById('back-to-selection').addEventListener('click', () => {
+    // Hentikan backsound
+    loopBacksound.pause();
+
     if (fromScanner) {
       renderScanner();
     } else {
@@ -281,6 +324,15 @@ function render3DView(modelData, fromScanner = false) {
       console.log(`"position": "${hit.position.x.toFixed(4)} ${hit.position.y.toFixed(4)} ${hit.position.z.toFixed(4)}",`);
       console.log(`"normal": "${hit.normal.x.toFixed(4)} ${hit.normal.y.toFixed(4)} ${hit.normal.z.toFixed(4)}"`);
       console.log(`--------------------------\n\n`);
+    }
+  });
+
+  // Perbesar 20x saat mode AR ruangan
+  modelViewer.addEventListener('ar-status', (event) => {
+    if (event.detail.status === 'session-started') {
+      modelViewer.setAttribute('scale', '20 20 20');
+    } else if (event.detail.status === 'not-presenting') {
+      modelViewer.removeAttribute('scale');
     }
   });
 }
